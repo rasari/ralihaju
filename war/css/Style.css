@@ -107,6 +107,16 @@ button{
     
 }
 
+#LOGO{
+	background-color: #1990b7;
+    padding: 2px 2px;
+    border-radius:3px;
+    position: relative;
+   	
+
+	
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #dd141e;
@@ -117,10 +127,3 @@ button{
     background-color: #ccc;
 }
 
-/* Style the tab content */
-/* .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-/*}
