@@ -36,15 +36,18 @@ input {
 	margin: 0 0 1.5em .40em;
 }
 
-label {
+.anmelden{
 	float: left;
 	text-align: left;
 	width: 5em;
 	color: #1990b7;
 }
 
-#anmelden{
+li{
 
+	list-style:none;
+}
+#anmelden{
 	float: right;
 	border-style: groove;
 	border-width: 2px;
@@ -115,6 +118,20 @@ button{
    	
 
 	
+}
+.bogen{
+	padding-left:10px;
+	position:relative;
+	width:1186px;
+	padding:auto 100px;
+	background-color:white;
+	border-width:2px;
+	border-color:#1990b7;
+	border-bottom-right-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	border-style: solid;
+	text-align: left;
+
 }
 
 /* Change background color of buttons on hover */
