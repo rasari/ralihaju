@@ -31,301 +31,399 @@
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
 	</div>
 	<div class="bogen">
-		<h1>Anamnesebogen</h1>
+		<h1>Bitte füllen Sie alles aus</h1>
 	<form>
-		<p>1. Beruf:<input type= "text" id= "Textfeld" name="Beruf"></p>
-		</form>	
+		<div class="frage">Beruf
+		<input type= "text" id= "Textfeld" name="Beruf">
+		</div>
+		<div class="antwort"><br></div>
+		</form>	<br>
+		
+		
+		
 		<form>
-		<p>2. Ist in letzter Zeit eine andere ärztliche Behandlung
-			erfolgt? 
+		<div class="frage">
+		Ist in letzter Zeit eine andere ärztliche Behandlungerfolgt?
+			</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, wann und weswegen? <input type= "text" id= "Textfeld" name="Frage"></p>
+			<p>Wenn ja, wann und weswegen? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
     	</form>	
+    	
+    	
+    	
+    	
     	<br>
-		<form class="Fragen">
-		<p>3. Besteht akut/Bestand in den letzten vier Wochen ein Infekt
-			(z.B. Erkältung, Fieber, Magen-Darm)? 
-			<input type="radio" id="ja" name="Antwort1" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
-			<input type="radio" id="nein" name="Antwort1" value="nein">
-			<label class="antwort" for="nein"> Nein</label>
-			<p>Wenn ja, welcher? <input type= "text" id= "Textfeld" name="Frage"></p>
-			
+		<form>
+		<div class="frage">
+		Besteht akut/Bestand in den letzten vier Wochen ein Infekt(z.B. Erkältung, Fieber, Magen-Darm)? 
+			</div>
+			<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
+			<input type="radio" id="nein" name="Antwort" value="nein">
+			<label class="antworten" for="nein"> Nein</label>
+			<p>Wenn ja, welcher? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 		</form>	
 			
 			
 		<br>
 		<form>
-		<p>4. Besteht/Bestand eine Infektionskrankheit (z.B. Hepatitis,
+		<div class="frage">Besteht/Bestand eine Infektionskrankheit (z.B. Hepatitis,
 			Tuberkulose, HIV/AIDS)? 
+			</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
-			<label class="antwort" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			<br>
-			</form>	
+			<label class="antworten" for="nein"> Nein</label>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
+		</form>	<br>
 			
-			<form>
-		<p>5. Werden regelmäßig oder derzeit Medikamente eingenommen (z.B.
+		<form>
+		<div class="frage">Werden regelmäßig oder derzeit Medikamente eingenommen (z.B.
 			gerinngungshemmende Mittel (z.B. Aspirin, Marcumar, Pradaxa, Plavix,
 			Xarelto, Lixiana, Heparin), Schmerzmittel, Herz-/Kreislauf-
 			Medikamente, Hormonpräparate, Schlaf- oder Beruhigungsmittel,
-			Antidiabetika)? <input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			Antidiabetika)? 
+			</div>
+			<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			<br>
-			
-		</form>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
+		</form><br>
 		
 		<form>
-		<p>6. Werden pflanzliche Mittel/Ergänzungspräparate eingenommen
-			(z.B. Johanniskraut, Gingko, Vitamine)? 
+		<div class="frage">Werden pflanzliche Mittel/Ergänzungspräparate eingenommen
+			(z.B. Johanniskraut, Gingko, Vitamine)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche/wann? <input type= "text" id= "Textfeld" name="Frage"></p>
-			<br>
+			<p>Wenn ja, welche/wann? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>
+			<br>
 <form>
-		<p>7. Wurde schon einmal eine Operation durchgeführt? 
-		<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Wurde schon einmal eine Operation durchgeführt? 
+		</div>
+		<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche/wann? <input type= "text" id= "Textfeld" name="Frage"></p>
-			<br>
+			<p>Wenn ja, welche/wann? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 		</form>	
+		<br>
 		<form>		
-		<p>8. Wurde schon einmal eine Narkose, Regionalanästhesie oder
-			örtliche Betäubung (z.B. beim Zahnarzt) durchgeführt? 
-			
-		<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Wurde schon einmal eine Narkose, Regionalanästhesie oder
+			örtliche Betäubung (z.B. beim Zahnarzt) durchgeführt? j/n Wenn ja,
+			gab es dabei Komplikationen? 
+		</div>
+		<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, gab es dabei Komplikationen? <input type= "text" id= "Textfeld" name="Frage"></p>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>	
 			<br>
 			<form>	
-		<p>9. Traten bei Blutsverwandten Probleme im Zusammenhang mit
-			einer Anästhesie auf? <input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Traten bei Blutsverwandten Probleme im Zusammenhang mit
+			einer Anästhesie auf? 
+			</div>
+			<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+			</div>
 		</form>	
-			<br>	<br>
+		<br>
 			<form>	
-		<p>10. Besteht eine Neigung zu Übelkeit/Erbrechen? 
-		<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Besteht eine Neigung zu Übelkeit/Erbrechen? 
+		</div>
+	<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+		
+			</div>
 			</form>	
-			<br>
+			
 				<br>
 				<form>	
-		<p>11. Besteht bei Ihnen bzw. Blutsverwandten die Veranlagung zu
-			hohem Fieber bei/nach Narkose (maligne Hyperthermie)? 
+		<div class="frage">Besteht bei Ihnen bzw. Blutsverwandten die Veranlagung zu
+			hohem Fieber bei/nach Narkose (maligne Hyperthermie)? </div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+			
+			</div>
 			</form>	
 			<br>
-				<br>
+				
 			<form>	
-		<p>12. Ist schon einmal eine Übertragung von
-			Blut/Blutbestandteilen(Transfusion) erfolgt? 
+		<div class="frage">Ist schon einmal eine Übertragung von
+			Blut/Blutbestandteilen(Transfusion) erfolgt? j/n Wenn ja, gab es
+			dabei Komplikationen? </div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja,
-			gab es dabei Komplikationen? <input type= "text" id= "Textfeld" name="Frage"></p>
-			
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>
 			<br>	
 			<form>	
-		<p>13. Haben Sie für den geplanten Eingriff Eigenblut gespendet?
+		<div class="frage">Haben Sie für den geplanten Eingriff Eigenblut gespendet?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+			
+			</div>
 			</form>	
 			<br>
 			<form>	
-		<p>14. Besteht eine Allergie wie Heuschnupfen oder allergisches
+		<div class="frage">Besteht eine Allergie wie Heuschnupfen oder allergisches
 			Asthma oder eine Unverträglichkeit bestimmter Substanzen (z.B.
 			Medikamente, Latex, Desinfektionsmittel, Betäubungsmittel,
-			Röntgenkontrastmittel, Jod, Pflaster, Pollen)?
+			Röntgenkontrastmittel, Jod, Pflaster, Pollen)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>	
 			<br>
 			<form>	
-		<p>15. Besteht eine Sojaunverträglichkeit/-allergie? 
-		<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Besteht eine Sojaunverträglichkeit/-allergie? </div>
+<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+			
+			</div>
 			</form>	
 			<br>
 			<form>	
-		<p>16. Besteht bei Ihnen oder in Ihrer Blutsverwandtschaft eine
+		<div class="frage">Besteht bei Ihnen oder in Ihrer Blutsverwandtschaft eine
 			erhöhte Blutungsneigung wie z.B. häufig Nasen-/Zahnfleischbluten,
-			blaue Flecken, Nachbluten nach Operationen?
+			blaue Flecken, Nachbluten nach Operationen?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+	
+			</div>
 			</form>	
 			<br>
 
 		<form>	
-		<p>17. Besteht/Bestand eine Gefäßerkrankung (z.B.
-			Durchblutungsstörung, Arteriosklerose, Aneurysma, Krampfadern)?
+		<div class="frage">Besteht/Bestand eine Gefäßerkrankung (z.B.
+			Durchblutungsstörung, Arteriosklerose, Aneurysma, Krampfadern)?</div>
+	<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>	
 			<br>
 			
 			<form>	
-		<p>18. Kam es schon einmal zu einem Gefäßverschluss durch
-			Blutgerinnsel (Thrombose/Embolie)?
+		<div class="frage">Kam es schon einmal zu einem Gefäßverschluss durch
+			Blutgerinnsel (Thrombose/Embolie)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div>
 			</form>	
 			<br>
 			<form>	
-		<p>19. Besteht/Bestand eine Herz-Kreislauf-Erkrankung (z.B.
+		<div class="frage">Besteht/Bestand eine Herz-Kreislauf-Erkrankung (z.B.
 			Herzfehler, Herzklappenfehler, Angina pectoris, Herzinfarkt,
 			Schlaganfall, Rhythmusstörungen, Herzmuskelentzündung, hoher
-			Blutdruck)?
+			Blutdruck)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
 			<br>
 			<form>	
-		<p>20. Tritt Atemnot bei Anstrengung auf?
-		<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+		<div class="frage">Tritt Atemnot bei Anstrengung auf?</div>
+		<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
+		
+			</div>
 			</form>	
 			<br>
 			<form>	
 			
-		<p>21. Besteht/Bestand eine Atemwegs-/Lungenerkrankung (z.B.
+		<div class="frage">Besteht/Bestand eine Atemwegs-/Lungenerkrankung (z.B.
 			Asthma bronchiale, chronische Bronchitis, Lungenentzündung,
-			Lungenblähung)?
+			Lungenblähung)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
+			<br>
+			<form>	
+		<div class="frage">Tritt starkes Schnarchen auf, liegt eine Schlafapnoe vor
+			oder besteht eine Stimmband-/Zwerchfelllähmung? </div>
+			<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
+			<input type="radio" id="nein" name="Antwort" value="nein">
+			<label class="antworten" for="nein"> Nein</label>
+			<p>Wenn ja, was? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
+			<br>
+			<form>	
+		<div class="frage">Besteht/Bestand eine Erkrankung des Verdauungssystems (z.B.
+			Speiseröhre, Magen, Bauchspeicheldrüse, Darm)?</div>
+			<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Ja</label>
+			<input type="radio" id="nein" name="Antwort" value="nein">
+			<label class="antworten" for="nein"> Nein</label>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	<br>
 			
-			<br>
 			<form>	
-		<p>22. Tritt starkes Schnarchen auf, liegt eine Schlafapnoe vor
-			oder besteht eine Stimmband-/Zwerchfelllähmung? 
+		<div class="frage">Tritt Sodbrennen auf oder besteht eine Refluxkrankheit? </div>
+		<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, was? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
-			<br>
-			<form>	
-		<p>23. Besteht/Bestand eine Erkrankung des Verdauungssystems (z.B.
-			Speiseröhre, Magen, Bauchspeicheldrüse, Darm)?
-			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
-			<input type="radio" id="nein" name="Antwort" value="nein">
-			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	<br>
-			<form>	
-		<p>24. Tritt Sodbrennen auf oder besteht eine Refluxkrankheit? <input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
-			<input type="radio" id="nein" name="Antwort" value="nein">
-			<label class="antworten" for="nein"> Nein</label>
-			</form>	
+			</div></form>	
 			<br>
 		<form>	
-		<p>25. Besteht/Bestand eine Erkrankung der Leber,
+		<div class="frage">Besteht/Bestand eine Erkrankung der Leber,
 			Gallenblase/-wege (z.B. Entzündung, Fettleber, Zirrhose,
-			Gallensteine)?
+			Gallensteine)?</div>
+		<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	<br>
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
+			<br>
 			<form>	
-		<p>26. Besteht/Bestand eine Erkrankung oder Fehlbildung der Nieren
+		<div class="frage">Besteht/Bestand eine Erkrankung oder Fehlbildung der Nieren
 			bzw. Harnorgane (z.B. Nierenfunktionsstörung, Nierenentzündung,
-			Nierensteine, Blasenentleerungsstörung)?
+			Nierensteine, Blasenentleerungsstörung)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
 			<br>
 			<form>	
-		<p>27. Besteht eine Stoffwechselerkrankung (z.B. Zuckerkrankheit,
-			Gicht)?
+		<div class="frage">Besteht eine Stoffwechselerkrankung (z.B. Zuckerkrankheit,
+			Gicht)?</div>
+			<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
 			<br>
 			<form>	
-		<p>28. Besteht/Bestand eine Schilddrüsenerkrankung (z.B.
-			Überfunktion, Unterfunktion, Kropf)?
+		<div class="frage">Besteht/Bestand eine Schilddrüsenerkrankung (z.B.
+		Überfunktion, Unterfunktion, Kropf)?</div>
+		<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
 			<br>
 			<form>	
-		<p>29. Besteht/Bestand eine Muskel- oder Skeletterkrankung (z.B.
-			Muskelschwäche, Gelenkerkrankung, Osteoporose)?
+		<div class="frage">Besteht/Bestand eine Muskel- oder Skeletterkrankung (z.B.
+			Muskelschwäche, Gelenkerkrankung, Osteoporose)?</div>
+		<div class="antwort">
 			<input type="radio" id="ja" name="Antwort" value="ja">
-			<label class="antwort" for="ja"> Ja</label>
+			<label class="antworten" for="ja"> Ja</label>
 			<input type="radio" id="nein" name="Antwort" value="nein">
 			<label class="antworten" for="nein"> Nein</label>
-			<p>Wenn ja, welche? <input type= "text" id= "Textfeld" name="Frage"></p>
-			</form>	
+			<p>Wenn ja, welche? 
+			<input type= "text" id= "Textfeld" name="Frage"></p>
+			</div></form>	
 			<br>
+			<form>	
+		<div class="frage">Datenschutzbestimmungen</div>
+		<div class="antwort">
+			<input type="radio" id="ja" name="Antwort" value="ja">
+			<label class="antworten" for="ja"> Gelesen und zugestimmt </label>
+			
+			</div></form>	
+			
+			<button>senden</button>
 
-
-	
+<br>
+<br>
 	</div>
-
 </body>
 </html>
 

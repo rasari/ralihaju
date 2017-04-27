@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 
 
+/*Body Style*/
 body{
 	position:absolute;
 	background-color: white;
@@ -10,6 +11,7 @@ body{
 	
 		
 }
+/*Logo GIB-Anamnese*/
 img{ 
 	width: 350px;
 	position:absolute;
@@ -17,7 +19,10 @@ img{
 		
 }
 
-
+h1{
+	color:#424242;
+	font-family: sans-serif;
+}
 b{
 	font-size:40px;
 	font-style:normal;
@@ -27,27 +32,28 @@ b{
 
 }
 
+/*Befehl form Style*/
 form{
 	margin-top:15px;
 	margin-left:5px;
 	margin-right:5px;
 }
-input {
-	margin: 0 0 1.5em .40em;
-}
 
+/*Anmelden etc. Style*/
 .anmelden{
 	float: left;
 	text-align: left;
 	width: 5em;
 	color: #1990b7;
 }
-
+/*Fragen sollen nicht aufgelistet angezeigt werden*/
 li{
-
 	list-style:none;
 }
+
+/*Anmelden etc. Style*/
 #anmelden{
+
 	float: right;
 	border-style: groove;
 	border-width: 2px;
@@ -64,12 +70,14 @@ button{
 	margin-right :5px;
 }
 
+/*Registrieren und abmelden Style*/
 #Regi,#vergessen{
 	color:scrollbar;
 	font-size:12px;
 	margin-left: 3px;
 	
 }
+/*hintergrund*/
 .tabcontent{
 	position:relative;
 	width:1196px;
@@ -96,7 +104,7 @@ button{
 	
 }
 
-/* Style the buttons inside the tab */
+/* Style Buttons im Reiter */
 .tab button {
     background-color: #1990b7;
     color:white;
@@ -110,15 +118,7 @@ button{
     
 }
 
-#LOGO{
-	background-color: #1990b7;
-    padding: 2px 2px;
-    border-radius:3px;
-    position: relative;
-   	
-
-	
-}
+/*Bogen Hintergrund etc.*/  
 .bogen{
 	padding-left:10px;
 	position:relative;
@@ -134,6 +134,51 @@ button{
 
 }
 
+
+/* CSS Fragen */
+.frage{
+	font-size: 22px;
+	font-style: normal;
+	font-family: sans-serif;
+	color: #424242;
+	border-width:1.5px;
+	border-color:#1990b7;
+	border-style: solid;
+	border-bottom-style:none;
+	margin-right:10px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	padding-left: 10px;
+	padding-top: 5px;
+
+	
+}
+/* Css Antworten auf die Fragen */
+.antwort{
+	font-size: 18px;
+	font-style: normal;
+	font-family: sans-serif;
+	border-width:1.5px;
+	border-color:#1990b7;
+	border-style: solid;
+	border-top-style:none;
+	color:#424242;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	padding-left: 13px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	margin-right:10px;
+	
+	
+	
+}
+
+/* Ja Nein Button abstand */
+.antworten{
+	padding-right:300px;
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #dd141e;
@@ -143,4 +188,3 @@ button{
 .tab button.active {
     background-color: #ccc;
 }
-
