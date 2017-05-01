@@ -3,16 +3,18 @@
 
 /*Body Style*/
 body{
-	position:absolute;
-	background-color: white;
+	position: absolute;
 	margin-left: 130px;
 	margin-top: 10px;
 	margin-right:50px;
+	padding-bottom:20px;
+	background-color: white;
+
 	
 		
 }
 /*Logo GIB-Anamnese*/
-img{ 
+#Logo{ 
 	width: 350px;
 	position:absolute;
 	top:10px;
@@ -188,3 +190,31 @@ button{
 .tab button.active {
     background-color: #ccc;
 }
+/*Tabelle*/
+table{
+	color: #424242;
+	border-collapse: collapse;
+	border-style: none;
+	
+}
+
+/*Auswahl schlecht,gleichbleibend,gut */
+.behandlungAuswahl{
+
+	float: right;
+	margin-right: 600px;
+	margin-bottom: 20px;
+
+}
+#Logo2{
+	width: 400px;
+	height: 250px;
+	border-style: solid;
+	border-color: #1990b7;
+	border-width: 3px;
+	border-radius:4px;
+	
+
+}
+
+

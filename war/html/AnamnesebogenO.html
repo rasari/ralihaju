@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-	<img src="../img/GALOGO.png" alt=Logo>
+	<img src="../img/GALOGO.png" alt=Logo id="Logo">
 <div id=anmelden>
 		<form>
 			<label class="anmelden" for="Klinik">Klinikum: </label> <input type="text" id="Klinik"
@@ -135,11 +135,27 @@
 		<div class="frage">
 		Auf einer Skala 0 -10, wobei 0 "kein Schmerz" bedeutet und 10 "stärkste Schmerzen", 
 		welche Zahl beschreibt Ihre Schmerzen während den letzten Wochen am besten?
-			<br><input type= "text" id= "Textfeld" name="Schmerzskala">
-		</div>
-		<div class="antwort"><br></div>
-			
+		</div><div class="antwort">
+		<label>
+			<select name="Skala">
+			<option>--<option>		
+			<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+			</select>
+			</label>
+			<br>
+			</div>
 			</form>
+			
 			<br>
 				
 	<form>
@@ -299,34 +315,188 @@
 			<br>
 			<form>	
 		<div class="frage">Wie wurden Ihre Schmerzen behandelt? Wie war der Behandlungserfolg </div>
-<div class="antwort">
+		<div class="antwort">
 			<input type="radio" id="bisher erfolgte keine Behandlung" name="Antwort" value="bisher erfolgte keine Behandlung">
 			<label class="antworten" for="bisher erfolgte keine Behandlung"> bisher erfolgte keine Behandlung</label>
 			<br><br>
 			
-			<table border="1">
-			<tr><th>Behandlung mit</th>  <th>Behandlungserfolg (Bitte auswählen)</th></tr>
-			<tr><td> </td><td> schlecht </td> <td> </td> <td>  gleichbleibend </td><td> </td> <td>   gut</td></tr>
-			<tr><td>Medikament</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Operation</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Infusion</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Einspritzungen ins Schmerzgebiet</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Nervenblockade</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Einspritzungen Rückenmarksnah</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Rückenmarksnahe Sonden- oder Pumpensysteme</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Krankengymnastik</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Massagen, Bäder, Kälte-, Wärmebehandlungen</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Elektr. Nervstimulation (TENS)</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Akupunktur</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Chiropraktik</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Psychotherapie</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Entspannungsverfahren</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Hypnose, Biofeedback</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Medikamentenentzug</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-			<tr><td>Sonstiges:</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
 			
-			</table>
-			</div>
+		<h4>Behandlung mit <span style="display:inline-block; width: 280px;"></span> Behandlungserfolg (Bitte auswählen)</h4>
+
+
+			<label>Medikament
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			
+			<br>
+			<br>
+			
+			<label>Operation
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Infusion
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Einspritzungen ins Schmerzgebiet
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Nervenblockade
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Einspritzungen Rückenmarksnah
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Rückenmarksnahe Sonden- oder Pumpensysteme
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Krankengymnastik
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Massagen, Bäder, Kälte-, Wärmebehandlungen
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Elektr. Nervstimulation (TENS)
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			
+			<label>Akupunktur
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Chiropraktik
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Psychotherapie
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			
+			<label>Entspannungsverfahren
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+		<br>
+			<label>Hypnose, Biofeedback
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br>
+			<br>
+			<label>Medikamentenentzug
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			<br><br>
+			<label>Sonstiges<input type= "text" id= "Textfeld" name="Frage">
+			<select name="top4" class="behandlungAuswahl">
+			<option>keine behandlung</option>
+				<option>schlecht</option>
+				<option>gleichbleibend</option>
+				<option>gut</option>
+			</select>
+			</label>
+			
+		</div>
 			</form>	
 			
 			<br>
@@ -493,11 +663,21 @@ werden."> Ich möchte über alle Gesundheitsleistungen, die in meinem Fall geeig
 werden.</label>
 			</div></form>	
 			
+	
+							<form>	
+		<div class="frage">Haben Sie noch Fragen?</div>
+		<div class="antwort">
+		<textarea name="nachricht" rows="6" cols="37"></textarea>
+		
+		
+			</div>
+			</form>
+		
 			<br>
 						<form>	
 		<div class="frage">Datenschutzbestimmungen</div>
 		<div class="antwort">
-			<input type="radio" id="ja" name="Antwort" value="ja">
+			<input type="checkbox" id="ja" name="Antwort" value="ja">
 			<label class="antworten" for="ja"> Gelesen und zugestimmt </label>
 			
 			</div></form>	

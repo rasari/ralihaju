@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-	<img src="../img/GALOGO.png" alt=Logo>
+	<img src="../img/GALOGO.png" alt=Logo id="Logo">
 <div id=anmelden>
 		<form>
 			<label class="anmelden" for="Klinik">Klinikum: </label> <input type="text" id="Klinik"
@@ -411,13 +411,23 @@
 			<input type= "text" id= "Textfeld" name="Frage"></p>
 			</div></form>	
 			<br>
-			<form>	
+								<form>	
+		<div class="frage">Haben Sie noch Fragen?</div>
+		<div class="antwort">
+		<textarea name="nachricht" rows="6" cols="37"></textarea>
+		
+		
+			</div>
+			</form>
+		
+			<br>
+						<form>	
 		<div class="frage">Datenschutzbestimmungen</div>
 		<div class="antwort">
-			<input type="radio" id="ja" name="Antwort" value="ja">
+			<input type="checkbox" id="ja" name="Antwort" value="ja">
 			<label class="antworten" for="ja"> Gelesen und zugestimmt </label>
 			
-			</div></form>	
+			</div></form>		
 			
 			<button>senden</button>
 
