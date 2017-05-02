@@ -70,8 +70,45 @@ button{
 	border-radius: 5px 5px;
 	float: right;
 	margin-right :5px;
+	border-radius: 5px 5px;
+	border-style: groove;
+	border-width: 2px;
+	border-color: #1990b7;
+	
+}
+/*zurück button*/
+#zurück{
+	float: left;
+	width: 100px;
+	height:30px;
+	font-family: sans-serif;
+	font-size:15px;
+	margin-top:25px;
 }
 
+/*zurück unten button*/
+#zurückUnten{
+	float: left;
+	width: 100px;
+	height:30px;
+	font-family: sans-serif;
+	font-size:15px;
+}
+/*senden button*/
+#senden{
+	float: right;
+	width: 100px;
+	height:30px;
+	font-family: sans-serif;
+	font-size:15px;
+}
+#zurück:hover, #zurückUnten:hover, #senden:hover{
+	background-color: #59aabe;
+}
+#zurück:active , #zurückUnten:active, #senden:active{
+	background-color: red;
+	border-color:red;
+}
 /*Registrieren und abmelden Style*/
 #Regi,#vergessen{
 	color:scrollbar;

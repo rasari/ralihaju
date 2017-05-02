@@ -21,7 +21,7 @@
 	</div>
 	<div class="tab">
 
-		</a><a href=../html/Anamnesebogen.html>
+		<a href=../html/Anamnesebogen.html>
 			<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
 		</a> 
 		<a href=../html/Kontakt.html>
@@ -30,15 +30,17 @@
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
 	</div>
 	<div class="bogen">
-		<h1>Bitte füllen Sie alles aus</h1>
+		<a href=../html/Anamnesebogen.html><button id="zurück">zurück</button></a>
+		<h1> Bitte füllen Sie alles aus</h1>
+	
 	<form>
 		<div class="frage">
-		Vorname<span style="display:inline-block; width: 100px;"></span><input type= "text" id= "Textfeld" name="Beruf">
-		<p>Nachname<span style="display:inline-block; width: 82px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
-		<p>Geburtsdatum<span style="display:inline-block; width: 49px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
-		<p>Straße<span style="display:inline-block; width: 123px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
-		<p>PLZ<span style="display:inline-block; width: 150px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
-		<p>Ort<span style="display:inline-block; width: 160px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
+		Vorname<span style="display:inline-block; width: 100px;"></span><input type= "text" id= "Textfeld" name="Vorname" >
+		<p>Nachname<span style="display:inline-block; width: 82px;"></span><input type= "text" id= "Textfeld" name="Nachname"></p>
+		<p>Geburtsdatum<span style="display:inline-block; width: 49px;"></span><input type= "date" id= "Textfeld" name="gebDat" placeholder="TT.MM.JJJJ"></p>
+		<p>Straße<span style="display:inline-block; width: 123px;"></span><input type= "text" id= "Textfeld" name="Str"></p>
+		<p>PLZ<span style="display:inline-block; width: 150px;"></span><input type= "text" id= "Textfeld" name="PLZ"></p>
+		<p>Ort<span style="display:inline-block; width: 160px;"></span><input type= "text" id= "Textfeld" name="Ort"></p>
 		<br>
 		</div>
 		<div class="antwort"></div>
@@ -441,9 +443,12 @@
 			<input type="checkbox" id="ja" name="Antwort" value="ja">
 			<label class="antworten" for="ja"> Gelesen und zugestimmt </label>
 			
-			</div></form>		
-			
-			<button>senden</button>
+			</div></form>	
+				<br>
+			<a href=../html/Anamnesebogen.html><button id="zurückUnten">zurück</button></a>
+
+	
+			<button id="senden">senden</button>
 
 <br>
 <br>

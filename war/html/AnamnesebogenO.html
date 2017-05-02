@@ -24,7 +24,7 @@
 	</div>
 	<div class="tab">
 
-		</a><a href=../html/Anamnesebogen.html>
+		<a href=../html/Anamnesebogen.html>
 			<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
 		</a> <a href=../html/Kontakt.html>
 			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
@@ -32,9 +32,10 @@
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
 	</div>
 	<div class="bogen">
-		<h1>Bitte füllen Sie alles aus</h1>
-
-
+	
+		<a href=../html/Anamnesebogen.html><button id="zurück">zurück</button></a>
+		<h1> Bitte füllen Sie alles aus</h1>
+	
 		<form>
 		<div class="frage">
 		
@@ -45,48 +46,7 @@
 		<input type="radio" id="ja" name="Antwort" value="weiblich">weiblich
 		<span style="display:inline-block; width: 80px;"></span>
 		<input type="radio" id="ja" name="Antwort" value="männlich">männlich
-		<p>Geburtsdatum<span style="display:inline-block; width: 49px;"></span>
-		<label>
-		
-			<select name="Datum" >
-			<option>Tag<option>		
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-				<option>11</option>
-				<option>12</option>
-				<option>13</option>
-				<option>14</option>
-				<option>15</option>
-				<option>16</option>
-				<option>17</option>
-				<option>18</option>
-				<option>19</option>
-				<option>20</option>
-				<option>21</option>
-				<option>22</option>
-				<option>23</option>
-				<option>24</option>
-				<option>25</option>
-				<option>26</option>
-				<option>27</option>
-				<option>28</option>
-				<option>29</option>
-				<option>30</option>
-				<option>31</option>
-			</select>
-			</label>
-		
-		
-		
-		
+		<p>Geburtsdatum<span style="display:inline-block; width: 49px;"></span><input type= "date" id= "Textfeld" name="gebDat" placeholder="TT.MM.JJJJ"></p>
 		<p>Straße<span style="display:inline-block; width: 123px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
 		<p>PLZ<span style="display:inline-block; width: 150px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
 		<p>Ort<span style="display:inline-block; width: 160px;"></span><input type= "text" id= "Textfeld" name="Beruf"></p>
@@ -744,10 +704,11 @@ werden.</label>
 			<label class="antworten" for="ja"> Gelesen und zugestimmt </label>
 			
 			</div></form>	
-			
-			<button>senden</button>
+			<br>
+<a href=../html/Anamnesebogen.html><button id="zurückUnten">zurück</button></a>
+
+				<button id="senden">senden</button>
 			<br>
 			<br>
 </div>
->>>>>>> branch 'master' of https://github.com/rasari/ralihaju
 </body></html>
