@@ -6,12 +6,15 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
+
 	<img src="../img/GALOGO.png" alt=Logo id="Logo">
 <div id=anmelden>
+
 		<form>
-			<label class="anmelden" for="Klinik">Klinikum: </label> <input type="text" id="Klinik"
-				name="Klinik"> <br> <label class="anmelden" for="Passwort">Passwort:</label><input
-				type="text" id="Passwort" name="Passwort">
+			<label class="anmelden" for="Klinik">Klinikum: </label> <input
+				type="text" id="Klinik" name="Klinik"> <br> <label
+				class="anmelden" for="Passwort">Passwort:</label><input type="text"
+				id="Passwort" name="Passwort">
 
 
 		</form>
@@ -24,14 +27,14 @@
 			<button class="tablinks" onclick="openTab(event, 'Startseite')">Startseite</button>
 		</a><a href=../html/Anamnesebogen.html>
 			<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
-		</a> 
-		<a href=../html/Kontakt.html>
+		</a> <a href=../html/Kontakt.html>
 			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
 		</a> <a href=../html/Impressum.html><button class="tablinks"
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
 	</div>
 	<div class="bogen">
 		<h1>Bitte füllen Sie alles aus</h1>
+<<<<<<< HEAD
 		
 	<form>
 		<div class="frage">Wegen welcher Beschwerde kommen Sie in die Praxis?
@@ -683,9 +686,775 @@ werden.</label>
 			</div></form>	
 			
 			<button>senden</button>
+=======
+>>>>>>> branch 'master' of https://github.com/rasari/ralihaju
 
-<br>
-<br>
+		<form>
+			<div class="frage">
+				Wegen welcher Beschwerde kommen Sie in die Praxis? <br> <input
+					type="text" id="Textfeld" name="Beschwerde">
+			</div>
+			<div class="antwort">
+				<br>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">
+				Bitte erläutern Sie an welchen Körperteilen Ihre Schmerzen
+				auftreten? <br>
+				<input type="text" id="Textfeld" name="Körperteile">
+			</div>
+			<div class="antwort">
+				<br>
+			</div>
+		</form>
+
+		<br>
+		<form>
+			<div class="frage">Befindet sich der Schmerz immer am gleichen
+				Ort oder wandert er?</div>
+			<div class="antwort">
+				<input type="radio" id="immer am gleichen Ort" name="Antwort"
+					value="immer am gleichen Ort"> <label class="antworten"
+					for="immer am gleichen Ort"> immer am gleichen Ort</label> <br>
+				<input type="radio" id="wandert meist" name="Antwort"
+					value="wandert meist"> <label class="antworten"
+					for="wandert meist"> wandert meist</label> <br> <input
+					type="radio" id="der Schmerz welchselt die Körperseite"
+					name="Antwort" value="der Schmerz welchselt die Körperseite">
+				<label class="antworten"
+					for="wder Schmerz welchselt die Körperseite"> der Schmerz
+					welchselt die Körperseite</label> <br> <input type="radio"
+					id="der Schmerz kann prinzipiell an jeder Körperstelle auftreten"
+					name="Antwort"
+					value="der Schmerz kann prinzipiell an jeder Körperstelle auftreten">
+				<label class="antworten"
+					for="der Schmerz kann prinzipiell an jeder Körperstelle auftreten">
+					der Schmerz kann prinzipiell an jeder Körperstelle auftreten</label>
+			</div>
+		</form>
+
+
+		<br>
+		<form>
+			<div class="frage">Fühlen Sie Ihren Hauptschmerz...?</div>
+			<div class="antwort">
+				<input type="radio" id="an der Oberfläche (Haut)" name="Antwort"
+					value="an der Oberfläche (Haut)"> <label class="antworten"
+					for="an der Oberfläche (Haut)"> an der Oberfläche (Haut)</label> <br>
+				<input type="radio" id="in der Tiefe" name="Antwort"
+					value="in der Tiefe"> <label class="antworten"
+					for="in der Tiefe"> in der Tiefe</label> <br> <input
+					type="radio" id="beides" name="Antwort" value="beides"> <label
+					class="antworten" for="beides"> beides</label>
+
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Beurteilen Sie Ihren Hauptschmerz so, wie er
+				in der letzten Zeit typisch gewesen ist.</div>
+			<div class="antwort">
+				<input type="radio" id="schneidend" name="Antwort"
+					value="schneidend"> <label class="antworten"
+					for="schneidend"> schneidend</label> <br><input type="radio"
+					id="brennend" name="Antwort" value="brennend"> <label
+					class="antworten" for="brennend"> brennend</label> <br> <input
+					type="radio" id="reißend" name="Antwort" value="reißend"> <label
+					class="antworten" for="reißend"> reißend</label> <br><input
+					type="radio" id="durchstoßend" name="Antwort" value="durchstoßend">
+				<label class="antworten" for="durchstoßend"> durchstoßend</label> <br>
+				<input type="radio" id="stechend" name="Antwort" value="stechend">
+				<label class="antworten" for="stechend"> stechend</label><br>  <input
+					type="radio" id="dumpf" name="Antwort" value="dumpf"> <label
+					class="antworten" for="dumpf"> dumpf</label> <br> <input
+					type="radio" id="hämmernd" name="Antwort" value="hämmernd">
+				<label class="antworten" for="hämmernd"> hämmernd</label><br> <input
+					type="radio" id="drückend" name="Antwort" value="drückend">
+				<label class="antworten" for="drückend"> drückend</label> <br>
+				<input type="radio" id="ziehend" name="Antwort" value="ziehend">
+				<label class="antworten" for="ziehend"> ziehend</label><br> <input
+					type="radio" id="pochend" name="Antwort" value="pochend"> <label
+					class="antworten" for="pochend"> pochend</label> <br> <input
+					type="radio" id="pulsierend" name="Antwort" value="pulsierend">
+				<label class="antworten" for="pulsierend"> pulsierend</label><br> <input
+					type="radio" id="lähmend" name="Antwort" value="lähmend"> <label
+					class="antworten" for="lähmend"> lähmend</label>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">
+				Auf einer Skala 0 -10, wobei 0 "kein Schmerz" bedeutet und 10
+				"stärkste Schmerzen", welche Zahl beschreibt Ihre Schmerzen während
+				den letzten Wochen am besten? <br>
+				<input type="text" id="Textfeld" name="Schmerzskala">
+			</div>
+			<div class="antwort">
+				<br>
+			</div>
+
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">
+				Seit wann bestehen Ihre Hauptbeschwerden? (Seit wie vielen Tagen,
+				Woche, Monaten oder Jahren) <br>
+				<input type="text" id="Textfeld" name="Zeitpunkt">
+			</div>
+			<div class="antwort">
+				<br>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Bringen Sie den Beginn Ihrer Schmerzen mit
+				einem bestimmten Ereignis in Zusammenhang?</div>
+			<div class="antwort">
+				<input type="radio" id="nein" name="Antwort" value="nein"> <label
+					class="antworten" for="nein"> Nein</label> <input type="radio"
+					id="ja" name="Antwort" value="ja"> <label class="antworten"
+					for="ja"> Ja</label>
+
+				<p>
+					Wenn ja, mit... <br> <input type="radio" id="Unfall"
+						name="Antwort" value="Unfall"> <label class="antworten"
+						for="Unfal"> Unfall</label> <br>
+					<input type="radio" id="Arbeitsunfall" name="Antwort"
+						value="Arbeitsunfall"> <label class="antworten"
+						for="Arbeitsunfall"> Arbeitsunfall</label> <br>
+					<input type="radio" id="Sturz" name="Antwort" value="Sturz">
+					<label class="antworten" for="Sturz"> Sturz</label> <br>
+					<input type="radio" id="Operation" name="Antwort" value="Operation">
+					<label class="antworten" for="Operation"> Operation</label> <br>
+					<input type="radio" id="Krankheit" name="Antwort" value="Krankheit">
+					<label class="antworten" for="Krankheit"> Krankheit</label> <br>
+					<input type="radio" id="berufliche Veränderung" name="Antwort"
+						value="berufliche Veränderung"> <label class="antworten"
+						for="berufliche Veränderung"> berufliche Veränderung</label> <br>
+					<input type="radio" id="seelische Belastung" name="Antwort"
+						value="seelische Belastung"> <label class="antworten"
+						for="seelische Belastung"> seelische Belastung</label>
+				</p>
+				<p>
+					sonstiges <input type="text" id="Textfeld" name="Frage">
+				</p>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Wie gestaltet sich der weitere Verlauf der
+				Hauptschmerzen?</div>
+			<div class="antwort">
+				<input type="radio" id="von Anfang an gleich bleibend"
+					name="Antwort" value="von Anfang an gleich bleibend"> <label
+					class="antworten" for="von Anfang an gleich bleibend"> von
+					Anfang an gleich bleibend</label> <br>
+				<input type="radio" id="ständig mehr" name="Antwort"
+					value="ständig mehr"> <label class="antworten"
+					for="ständig mehr"> ständig mehr</label> <br>
+				<input type="radio" id="immer häufiger, zuletzt ständig"
+					name="Antwort" value="immer häufiger, zuletzt ständig"> <label
+					class="antworten" for="immer häufiger, zuletzt ständig">
+					immer häufiger, zuletzt ständig</label>
+				<p>
+					Falls zutreffend, seit wann besteht ein Dauerschmerz? <input
+						type="text" id="Textfeld" name="Frage">
+				</p>
+			</div>
+		</form>
+		<br>
+		<form>
+			<div class="frage">Wie häufig leiden Sie unter schmerzen?
+				Tragen Sie in das Feld eine entsprechende Zahl ein.</div>
+			<div class="antwort">
+				<input type="radio" id="dauerhaft" name="Antwort" value="dauerhaft">
+				<label class="antworten" for="dauerhaft"> dauerhaft</label> <br>
+				<input type="radio" id="pro Tag etwa ... mal" name="Antwort"
+					value="pro Tag etwa ... mal"> <label class="antworten"
+					for="pro Tag etwa ... mal"> pro Tag etwa ... mal</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+				<input type="radio" id="pro Woche etwa ... mal" name="Antwort"
+					value="pro Woche etwa ... mal"> <label class="antworten"
+					for="pro Woche etwa ... mal"> pro Woche etwa ... mal</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+				<input type="radio" id="pro Monat etwa ... mal" name="Antwort"
+					value="pro Monat etwa ... mal"> <label class="antworten"
+					for="pro Monat etwa ... mal"> pro Monat etwa ... mal</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+				<input type="radio" id="pro Jahr etwa ... mal" name="Antwort"
+					value="pro Jahr etwa ... mal"> <label class="antworten"
+					for="pro Jahr etwa ... mal"> pro Jahr etwa ... mal</label> <br>
+				<input type="text" id="Textfeld" name="Frage">
+
+			</div>
+		</form>
+
+		<br>
+		<form>
+			<div class="frage">Was verstärtk den Schmerz?</div>
+			<div class="antwort">
+				<input type="radio" id="häufiges Überkopfarbeiten" name="Antwort"
+					value="häufiges Überkopfarbeiten"> <label class="antworten"
+					for="häufiges Überkopfarbeiten"> häufiges Überkopfarbeiten</label>
+				<br>
+				<input type="radio" id="häufiges Bücken" name="Antwort"
+					value="häufiges Bücken"> <label class="antworten"
+					for="häufiges Bücken"> häufiges Bücken</label> <br>
+				<input type="radio" id="Zwangshaltung" name="Antwort"
+					value="Zwangshaltung"> <label class="antworten"
+					for="Zwangshaltung"> Zwangshaltung</label> <br>
+				<input type="radio" id="heben und tragen von Lasten" name="Antwort"
+					value="heben und tragen von Lasten"> <label
+					class="antworten" for="heben und tragen von Lasten"> heben
+					und tragen von Lasten</label> <br>
+				<input type="radio" id="Treppensteigen" name="Antwort"
+					value="Treppensteigen"> <label class="antworten"
+					for="Treppensteigen"> Treppensteigen</label> <br>
+				<input type="radio" id="Wetterwechsel" name="Antwort"
+					value="Wetterwechsel"> <label class="antworten"
+					for="Wetterwechsel"> Wetterwechsel</label> <br>
+				<input type="radio" id="Arbeiten bei langem Stehen" name="Antwort"
+					value="Arbeiten bei langem Stehen"> <label
+					class="antworten" for="Arbeiten bei langem Stehen">
+					Arbeiten bei langem Stehen</label> <br>
+				<input type="radio" id="Arbeiten beim längeren Sitzen"
+					name="Antwort" value="Arbeiten beim längeren Sitzen"> <label
+					class="antworten" for="Arbeiten beim längeren Sitzen">
+					Arbeiten beim längeren Sitzen</label>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Zu welcher Tageszeit treten Ihre Schmerzen
+				im allgemeinen auf oder sind am schlimmsten?</div>
+			<div class="antwort">
+				<input type="radio" id="morgens vor dem Aufstehen" name="Antwort"
+					value="morgens vor dem Aufstehen"> <label class="antworten"
+					for="morgens vor dem Aufstehen"> morgens vor dem Aufstehen</label>
+				<br>
+				<input type="radio" id="nachmittags" name="Antwort"
+					value="nachmittags"> <label class="antworten"
+					for="nachmittags"> nachmittags</label> <br>
+				<input type="radio" id="abends" name="Antwort" value="abends">
+				<label class="antworten" for="abends"> abends</label> <br>
+				<input type="radio" id="mittags" name="Antwort" value="mittags">
+				<label class="antworten" for="mittags"> mittags</label> <br>
+				<input type="radio" id="nachts" name="Antwort" value="nachts">
+				<label class="antworten" for="nachts"> nachts</label> <br>
+				<input type="radio" id="die Schmerzen sind tageszeitenunabhängig"
+					name="Antwort" value="die Schmerzen sind tageszeitenunabhängig">
+				<label class="antworten"
+					for="die Schmerzen sind tageszeitenunabhängig"> die
+					Schmerzen sind tageszeitenunabhängig</label>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Wie weit können Sie schmerzfrei gehen?</div>
+			<div class="antwort">
+				<input type="radio" id="weniger als 100 m" name="Antwort"
+					value="weniger als 100 m"> <label class="antworten"
+					for="weniger als 100 m"> weniger als 100 m</label> <br>
+				<input type="radio" id="weniger als 500 m" name="Antwort"
+					value="weniger als 500 m"> <label class="antworten"
+					for="weniger als 500 m"> weniger als 500 m</label> <br>
+				<input type="radio" id="weniger als 1000 m" name="Antwort"
+					value="weniger als 1000 m"> <label class="antworten"
+					for="weniger als 1000 m"> weniger als 100 m</label> <br>
+				<input type="radio" id="1000 m und mehr" name="Antwort"
+					value="1000 m und mehr"> <label class="antworten"
+					for="1000 m und mehr"> 1000 m und mehr</label>
+
+			</div>
+		</form>
+		<br>
+		<form>
+			<div class="frage">Von wem wurden Sie bisher wegen Ihrer
+				Schmerzen untersucht oder behandelt?</div>
+			<div class="antwort">
+				<input type="radio" id="keine Behandlung" name="Antwort"
+					value="keine Behandlung"> <label class="antworten"
+					for="keine Behandlung"> keine Behandlung</label> <br>
+				<input type="radio" id="Allgemeinarzt" name="Antwort"
+					value="Allgemeinarzt"> <label class="antworten"
+					for="Allgemeinarzt"> Allgemeinarzt</label> <br>
+				<input type="radio" id="Internist" name="Antwort" value="Internist">
+				<label class="antworten" for="Internist"> Internist</label> <br>
+				<input type="radio" id="Orthopäde" name="Antwort" value="Orthopäde">
+				<label class="antworten" for="Orthopäde"> Orthopäde</label>
+				<p>
+					Sonstige: <input type="text" id="Textfeld" name="Frage">
+				</p>
+			</div>
+		</form>
+
+		<br>
+		<form>
+			<div class="frage">Wie wurden Ihre Schmerzen behandelt? Wie war
+				der Behandlungserfolg</div>
+			<div class="antwort">
+				<input type="radio" id="bisher erfolgte keine Behandlung"
+					name="Antwort" value="bisher erfolgte keine Behandlung"> <label
+					class="antworten" for="bisher erfolgte keine Behandlung">
+					bisher erfolgte keine Behandlung</label> <br>
+				<br>
+
+				<table border="1">
+					<tr>
+						<th>Behandlung mit</th>
+						<th>Behandlungserfolg (Bitte auswählen)</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td>schlecht</td>
+						<td></td>
+						<td>gleichbleibend</td>
+						<td></td>
+						<td>gut</td>
+					</tr>
+					<tr>
+						<td>Medikament</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Operation</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Infusion</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Einspritzungen ins Schmerzgebiet</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Nervenblockade</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Einspritzungen Rückenmarksnah</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Rückenmarksnahe Sonden- oder Pumpensysteme</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Krankengymnastik</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Massagen, Bäder, Kälte-, Wärmebehandlungen</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Elektr. Nervstimulation (TENS)</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Akupunktur</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Chiropraktik</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Psychotherapie</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Entspannungsverfahren</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Hypnose, Biofeedback</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Medikamentenentzug</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Sonstiges:</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</table>
+			</div>
+		</form>
+
+		<br>
+		<form>
+			<div class="frage">Welche Medikamente nehmen Sie zur Zeit ein?</div>
+			<div class="antwort">
+
+				<table border="1">
+					<tr>
+						<th>Medikament</th>
+						<th>Art <br> (Tabletten, Zäpfchen, Tropfen...)
+						</th>
+						<th>Dosierung <br> (wie oft täglich, bei Bedarf)
+						</th>
+						<th>Zeitraum <br> (von - bis)
+						</th>
+					</tr>
+					<tr>
+						<td>____________</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>____________</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>____________</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>____________</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+
+
+		<br>
+		<form>
+			<div class="frage">Ist bei Ihnen eine Allergie oder
+				Medikamentenunverträglichkeit bekannt?</div>
+			<div class="antwort">
+				<input type="radio" id="nein" name="Antwort" value="nein"> <label
+					class="antworten" for="nein"> Nein</label> <input type="radio"
+					id="ja" name="Antwort" value="ja"> <label class="antworten"
+					for="ja"> Ja</label>
+
+				<p>
+					Wenn ja, welche? <input type="text" id="Textfeld" name="Frage">
+				</p>
+			</div>
+		</form>
+		<br>
+
+		<form>
+			<div class="frage">Welche schmerzbezogene Untersuchung wurde
+				bei Ihnen durchgeführt?</div>
+			<div class="antwort">
+
+				<table border="1">
+					<tr>
+						<th>Untersuchung</th>
+						<th>Wann?</th>
+						<th>Wo?</th>
+						<th>Körperteil</th>
+					</tr>
+					<tr>
+						<td>Röntgen</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Computertomographie</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Kernspintomographie</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Ultraschalluntersuchungen</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Skelettszintigraphie</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Muskel- u. Nervenuntersuchungen</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Sonstiges:</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+
+
+		<br>
+		<form>
+			<div class="frage">Wie schätzen Sie ihre beruflich bedingte
+				körperliche/seelische Belastung ein?</div>
+			<div class="antwort">
+				<input type="radio" id="gering" name="Antwort" value="gering">
+				<label class="antworten" for="gering"> gering</label> <input
+					type="radio" id="mittel" name="Antwort" value="mittel"> <label
+					class="antworten" for="mittel"> mittel</label> <input type="radio"
+					id="stark" name="Antwort" value="stark"> <label
+					class="antworten" for="stark"> stark</label>
+
+				<p>
+					Sind Sie derzeit arbeitsunfähig? <input type="radio" id="nein"
+						name="Antwort" value="nein"> <label class="antworten"
+						for="nein"> Nein</label>
+				</p>
+				<input type="radio" id="Ja, seit wann?" name="Antwort"
+					value="Ja, seit wann?"> <label class="antworten"
+					for="Ja, seit wann?"> Ja, seit wann?</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+
+				<p>
+					Liegt eine Minderung der Erwerbsfähigkeit vor? <br>
+					<input type="radio" id="nein" name="Antwort" value="nein">
+					<label class="antworten" for="nein"> Nein</label>
+				</p>
+				<input type="radio" id="Ja, welche?" name="Antwort"
+					value="Ja, welche?"> <label class="antworten"
+					for="Ja, welche?"> Ja, welche?</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+
+				<p>
+					Liegt ein Behinderungsgrad (%) vor? <br>
+					<input type="radio" id="nein" name="Antwort" value="nein">
+					<label class="antworten" for="nein"> Nein</label>
+				</p>
+				<input type="radio" id="Ja, wie viel?" name="Antwort"
+					value="Ja, wie viel?"> <label class="antworten"
+					for="Ja, wie viel?"> Ja, wie viel?</label> <br>
+				<input type="text" id="Textfeld" name="Frage"> <br>
+
+				<p>
+					Beziehen Sie Rente? <br>
+					<input type="radio" id="nein" name="Antwort" value="nein">
+					<label class="antworten" for="nein"> Nein</label> <input
+						type="radio" id="ja" name="Antwort" value="ja"> <label
+						class="antworten" for="ja"> Ja</label>
+				</p>
+
+				<p>
+					Laufen derzeit diesbezüglich Anträge oder <br>
+					<input type="radio" id="nein" name="Antwort" value="nein">
+					<label class="antworten" for="nein"> Nein</label> <input
+						type="radio" id="ja" name="Antwort" value="ja"> <label
+						class="antworten" for="ja"> Ja</label>
+				</p>
+
+			</div>
+		</form>
+		<br>
+		<form>
+			<div class="frage">Leiden Sie an einer der folgenden
+				Erkrankungen?</div>
+			<div class="antwort">
+				<input type="radio" id="Schilddrüsenerkrankung" name="Antwort"
+					value="Schilddrüsenerkrankung"> <label class="antworten"
+					for="Schilddrüsenerkrankung"> Schilddrüsenerkrankung</label> <br>
+				<input type="radio" id="Angina pectoris" name="Antwort"
+					value="Angina pectoris"> <label class="antworten"
+					for="Angina pectoris"> Angina pectoris</label> <br>
+				<input type="radio" id="Bluthochdruck" name="Antwort"
+					value="Bluthochdruck"> <label class="antworten"
+					for="Bluthochdruck"> Bluthochdruck</label> <br>
+				<input type="radio" id="Sonstige Herzerkrankungen" name="Antwort"
+					value="Sonstige Herzerkrankungen"> <label class="antworten"
+					for="Sonstige Herzerkrankungen"> Sonstige Herzerkrankungen</label>
+				<br>
+				<input type="radio" id="Nierenerkrankung" name="Antwort"
+					value="Nierenerkrankung"> <label class="antworten"
+					for="Nierenerkrankung"> Nierenerkrankung</label> <br>
+				<input type="radio" id="Durchblutungsstörungen" name="Antwort"
+					value="Durchblutungsstörungen"> <label class="antworten"
+					for="Durchblutungsstörungen"> Durchblutungsstörungen</label> <br>
+				<input type="radio" id="Chronische Erkrankung" name="Antwort"
+					value="Chronische Erkrankung"> <label class="antworten"
+					for="Chronische Erkrankung"> Chronische Erkrankung</label> <br>
+				<input type="radio" id="Neurologische Erkrankung" name="Antwort"
+					value="Neurologische Erkrankung"> <label class="antworten"
+					for="Neurologische Erkrankung"> Neurologische Erkrankung</label> <br>
+				<input type="radio" id="Krebserkrankung" name="Antwort"
+					value="Krebserkrankung"> <label class="antworten"
+					for="Krebserkrankung"> Krebserkrankung</label> <br>
+				<input type="radio" id="Diabetes mellitus" name="Antwort"
+					value="Diabetes mellitus"> <label class="antworten"
+					for="Diabetes mellitus"> Diabetes mellitus</label>
+
+				<p>
+					Sonstiges: <input type="text" id="Textfeld" name="Frage">
+				</p>
+
+			</div>
+		</form>
+		<br>
+		<form>
+
+			<div class="frage">Wie sind Sie auf meine Praxis aufmerksam
+				geworden?</div>
+			<div class="antwort">
+				<input type="radio" id="Telefonbuch" name="Antwort"
+					value="Telefonbuch"> <label class="antworten"
+					for="Telefonbuch"> Telefonbuch</label> <br>
+				<input type="radio" id="Empfehlung" name="Antwort"
+					value="Empfehlung"> <label class="antworten"
+					for="Empfehlung"> Empfehlung</label> <br>
+				<input type="radio" id="Internet" name="Antwort" value="Internet">
+				<label class="antworten" for="Internet"> Internet</label> <br>
+				<input type="radio" id="Hausarzt" name="Antwort" value="Hausarzt">
+				<label class="antworten" for="Hausarzt"> Hausarzt</label>
+				<p>
+					Sonstiges: <input type="text" id="Textfeld" name="Frage">
+				</p>
+			</div>
+		</form>
+		<br>
+		<form>
+			<div class="frage">
+				Um Sie individuell und optimal behandeln zu können, kommen oftmals
+				auch Behandlungsmöglichkeiten in Betracht, welche von den
+				gesetzlichen Krankenkassen nicht übernommen werden. <br>
+				Entscheiden Sie selbst, über welche Therapiemethoden Sie aufgeklärt
+				werden möchten.
+			</div> <br>
+			<div class="antwort">
+				<input type="radio"
+					id="Ich möchte nur die Leistungen in Anspruch nehmen, die von meiner gesetzlichen Krankenkasse
+erstattet werden."
+					name="Antwort"
+					value="Ich möchte nur die Leistungen in Anspruch nehmen, die von meiner gesetzlichen Krankenkasse
+erstattet werden.">
+				<label class="antworten"
+					for="Ich möchte nur die Leistungen in Anspruch nehmen, die von meiner gesetzlichen Krankenkasse
+erstattet werden.">
+					Ich möchte nur die Leistungen in Anspruch nehmen, die von meiner
+					gesetzlichen Krankenkasse erstattet werden.</label> <br>
+				<input type="radio"
+					id="Ich möchte über alle Gesundheitsleistungen, die in meinem Fall geeignet und sinnvoll sind, aufgeklärt
+werden."
+					name="Antwort"
+					value="Ich möchte über alle Gesundheitsleistungen, die in meinem Fall geeignet und sinnvoll sind, aufgeklärt
+werden.">
+				<label class="antworten"
+					for="Ich möchte über alle Gesundheitsleistungen, die in meinem Fall geeignet und sinnvoll sind, aufgeklärt
+werden.">
+					Ich möchte über alle Gesundheitsleistungen, die in meinem Fall
+					geeignet und sinnvoll sind, aufgeklärt werden.</label>
+			</div>
+		</form>
+
+		<br>
+		<form>
+			<div class="frage">Datenschutzbestimmungen</div>
+			<div class="antwort">
+				<input type="radio" id="ja" name="Antwort" value="ja"> <label
+					class="antworten" for="ja"> Gelesen und zugestimmt </label>
+
+			</div>
+		</form>
+
+		<button>senden</button>
+
+		<br> <br>
 	</div>
 </body>
 </html>
