@@ -5,7 +5,7 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<icon>favicon.ico</icon>
+		<icon>img/favicon.ico</icon>
 		<servlet-name>GIB_Anamnese</servlet-name>
 		<servlet-class>htwg.in.gib.anam.GIB_AnamneseServlet</servlet-class>
 	</servlet>
