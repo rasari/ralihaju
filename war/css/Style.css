@@ -274,8 +274,8 @@ textarea{
 	font-size: medium;
 }
 
-#Medikament, #Art, #Dosierung, #Zeitraum, #Wann #Wo, #Körperteil{
+.Medikament, .Art, .Dosierung, .Zeitraum, .Wann , .Wo, .Körperteil{
 	border-style: none;
-	height: 5px;
-	width: 5px;
+	height: 25px;
+	width: 260px;
 }
