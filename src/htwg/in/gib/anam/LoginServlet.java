@@ -19,10 +19,12 @@ public class LoginServlet extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter writer = resp.getWriter();
 		String htmlResponse = "<html>";
+		htmlResponse += 
 		htmlResponse += "<h2>Ihr Benutzername lautet: " + username + "</h2>";
 		htmlResponse += "<h2>Ihr Passwort lautet: " + passwort + "</h2>";
 		htmlResponse += "</html>";
-	
-		writer.println(htmlResponse);
+		
+
+		writer.println();
 	}
 }
