@@ -12,9 +12,9 @@ public class GIB_AnamneseServlet extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		req.getRequestDispatcher("../html/Anamnesebogen.html").include(req, resp); 
 		
-		logInName = req.getParameter("Klinik");
+		String logInName = req.getParameter("Klinik");
 		
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello ich teste die world");
+		resp.getWriter().println("Klinikum: " + logInName);
 	}
 }
