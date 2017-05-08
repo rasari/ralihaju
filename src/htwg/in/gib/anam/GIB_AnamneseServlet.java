@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
+
 @SuppressWarnings("serial")
 public class GIB_AnamneseServlet extends HttpServlet {
 	
