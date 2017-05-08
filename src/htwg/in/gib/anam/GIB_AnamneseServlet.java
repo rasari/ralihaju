@@ -1,6 +1,7 @@
 package htwg.in.gib.anam;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -10,12 +11,18 @@ import javax.servlet.http.*;
 public class GIB_AnamneseServlet extends HttpServlet {
 	
 	@Override
-	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		req.getRequestDispatcher("../html/Anamnesebogen.html").include(req, resp); 
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException { 
 		
-		String logInName = req.getParameter("Klinik");
+		String username = req.getParameter("Klinik");
+		String passwort = req.getParameter("Passwort");
 		
-		resp.setContentType("text/plain");
-		resp.getWriter().println("Klinikum: " + logInName);
+		resp.setContentType("text/html");
+		PrintWriter writer = resp.getWriter();
+		String htmlResponse = "<html>";
+		htmlResponse += "<h2>Ihr Benutzername lautet: " + username + "</h2>";
+		htmlResponse += "<h2>Ihr Passwort lautet: " + passwort + "</h2>";
+		htmlResponse += "</html>";
+		 
+		writer.println(htmlResponse);
 	}
 }
