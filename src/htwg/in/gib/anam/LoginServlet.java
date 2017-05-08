@@ -3,6 +3,7 @@ package htwg.in.gib.anam;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,13 +19,14 @@ public class LoginServlet extends HttpServlet {
 
 		resp.setContentType("text/html");
 		PrintWriter writer = resp.getWriter();
-		String htmlResponse = "<html>";
-		htmlResponse += 
-		htmlResponse += "<h2>Ihr Benutzername lautet: " + username + "</h2>";
-		htmlResponse += "<h2>Ihr Passwort lautet: " + passwort + "</h2>";
+		String htmlResponse =  "<h2>Ihr Benutzername lautet: " + username + "</h2>";
+		htmlResponse += "<h2>Ihr Passwort lautet: " + passwort + "</h2>";;
+		htmlResponse += "</div>";
+		htmlResponse += "</body>";
 		htmlResponse += "</html>";
 		
-
-		writer.println();
+		RequestDispatcher rd = req.getRequestDispatcher("../war/html/Login.html");
+		rd.include(req, resp);
+		writer.println(htmlResponse);
 	}
 }
