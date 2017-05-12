@@ -282,8 +282,10 @@ textarea{
 
 
 /*skalierung*/
-#page {
-    width: 80%;
-    min-width: 500px;
-    max-width: 1200px;
+.container {
+width: 920px;
+margin: 50px auto;
+padding: 0 42px;
+background-repeat: no-repeat;
+background-position: center 0px;
 }
