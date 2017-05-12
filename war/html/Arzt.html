@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Anamnese</title>
+<link rel="shortcut icon" href="../html/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+<div class="container">
+	<img src="../img/GALOGO.png" alt=Logo id="Logo">
+	
+	<div class="tab">
+
+		<a href=../html/Anamnesebogen.html>
+			<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
+		</a> <a href=../html/Kontakt.html>
+			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
+		</a> <a href=../html/Impressum.html><button class="tablinks"
+				onclick="openTab(event, 'Impressum')">Impressum</button></a>
+		<a href=../html/Arzt.html>
+			<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button></a>
+				
+	</div>
+	<div class="tabcontent">
+
+	<div class=bogen>
+		
+		<form name="login" method="get" action="/login">
+		<div id="login">
+			<label class="anmelden" for="Klinik">Klinikum: </label> 
+			<input type="text" id="Klinik" name="Klinik"> <br> 
+			<label class="anmelden" for="Passwort">Passwort:</label>
+			<input type="password" id="Passwort" name="Passwort">
+			<br>
+			<a id="vergessen">Passwort vergessen? </a><a id="Regi">
+			Registrieren</a>
+			<input type="submit" value="Anmelden">
+			<br>
+				</div>
+				</form> <br> 
+				
+				
+		
+		<form>	
+		<div id="anamneseliste">
+				Neue Anamnesen:
+				<br>
+				
+				
+				/*platzhalter für Liste mit Anamnesebögen*/
+				
+		<div class="antwort">
+				<textarea name="nachricht003" rows="6" cols="37"></textarea>
+			</div>
+		</div>
+				</form> <br> 
+		
+				<button id="herunterladen">Alle Herunterladen</button>
+				<button id="löschen">Alle löschen</button>
+				<button id="markieren">Alle markieren</button>
+				<button id="markierterunterladen">Markierte herunterladen</button>
+				<br><br>
+				<br><br>
+				
+	</div>
+	</div>
+	</div>
+</body>
+</html>
