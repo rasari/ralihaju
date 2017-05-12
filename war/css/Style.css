@@ -279,3 +279,11 @@ textarea{
 	height: 25px;
 	width: 260px;
 }
+
+
+/*skalierung*/
+#page {
+    width: 80%;
+    min-width: 500px;
+    max-width: 1200px;
+}
