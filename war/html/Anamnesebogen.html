@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
+<div class="container">
 	<img src="../img/GALOGO.png" alt=Logo id="Logo">
 	<div id=anmelden>
 		<form name="login" method="get" action="/login">
@@ -15,11 +16,12 @@
 			<label class="anmelden" for="Passwort">Passwort:</label>
 			<input type="password" id="Passwort" name="Passwort">
 			<br>
-			<a id="vergessen">Passwort vergesen? </a><a id="Regi">
+			<a id="vergessen">Passwort vergessen? </a><a id="Regi">
 			Registrieren</a>
 			<input type="submit" value="Anmelden">
 				</form>
 	</div>
+	<br>
 	<div class="tab">
 
 		<a href=../html/Anamnesebogen.html>
@@ -28,6 +30,8 @@
 			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
 		</a> <a href=../html/Impressum.html><button class="tablinks"
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
+				<a href=../html/Arzt.html>
+			<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button></a>
 	</div>
 
 	<div class="tabcontent">
@@ -56,9 +60,12 @@
 			<a href="../html/AnamnesebogenO.html"><img id="Logo2"
 				src="../img/orthopaedie.png" /></a> <br>
 		</div>
-	</div>
-	<p>
+		
+		<p>
 		<a href="/gib_anamnese">GIB_Anamnese</a>
+	</div>
+	</div>
+	
 </body>
 </html>
 

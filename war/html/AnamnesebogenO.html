@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-
+<div class="container">
 	<img src="../img/GALOGO.png" alt=Logo id="Logo">
 	<div id=anmelden>
 
@@ -19,10 +19,11 @@
 
 
 		</form>
-		<a id="vergessen">Passwort vergesen? </a><a id="Regi">
+		<a id="vergessen">Passwort vergessen? </a><a id="Regi">
 			Registrieren</a>
 		<button>anmelden</button>
 	</div>
+	<br>
 	<div class="tab">
 
 		<a href=../html/Anamnesebogen.html>
@@ -31,6 +32,8 @@
 			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
 		</a> <a href=../html/Impressum.html><button class="tablinks"
 				onclick="openTab(event, 'Impressum')">Impressum</button></a>
+				<a href=../html/Arzt.html>
+			<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button></a>
 	</div>
 	<div class="bogen">
 
@@ -79,7 +82,7 @@
 
 		<form>
 			<div class="frage">
-				Wegen welcher Beschwerde kommen Sie in die Praxis? <br>
+				1. Wegen welcher Beschwerde kommen Sie in die Praxis? <br>
 				<textarea name="Beschwerde" rows="3" cols="100"></textarea>
 			</div>
 			<div class="antwort">
@@ -90,7 +93,7 @@
 
 		<form>
 			<div class="frage">
-				Bitte erläutern Sie an welchen Körperteilen Ihre Schmerzen
+				2. Bitte erläutern Sie an welchen Körperteilen Ihre Schmerzen
 				auftreten? <br>
 				<textarea name="Körperteile" rows="3" cols="100"></textarea>
 			</div>
@@ -101,7 +104,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Befindet sich der Schmerz immer am gleichen
+			<div class="frage">3. Befindet sich der Schmerz immer am gleichen
 				Ort oder wandert er?</div>
 			<div class="antwort">
 				<input type="radio" id="immer am gleichen Ort" name="Antwort"
@@ -127,7 +130,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Fühlen Sie Ihren Hauptschmerz...?</div>
+			<div class="frage">4. Fühlen Sie Ihren Hauptschmerz...?</div>
 			<div class="antwort">
 				<input type="radio" id="an der Oberfläche (Haut)" name="Antwort"
 					value="an der Oberfläche (Haut)"> <label class="antworten"
@@ -143,7 +146,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Beurteilen Sie Ihren Hauptschmerz so, wie er
+			<div class="frage">5. Beurteilen Sie Ihren Hauptschmerz so, wie er
 				in der letzten Zeit typisch gewesen ist.</div>
 			<div class="antwort">
 				<input type="checkbox" id="schneidend" name="Antwort"
@@ -177,7 +180,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Auf einer Skala 0 -10, wobei 0 "kein
+			<div class="frage">6. Auf einer Skala 0 -10, wobei 0 "kein
 				Schmerz" bedeutet und 10 "stärkste Schmerzen", welche Zahl
 				beschreibt Ihre Schmerzen während den letzten Wochen am besten?</div>
 			<div class="antwort">
@@ -204,7 +207,7 @@
 
 		<form>
 			<div class="frage">
-				Seit wann bestehen Ihre Hauptbeschwerden? (Seit wie vielen Tagen,
+				7. Seit wann bestehen Ihre Hauptbeschwerden? (Seit wie vielen Tagen,
 				Woche, Monaten oder Jahren) <br>
 				<textarea name="Zeitpunkt" rows="3" cols="100"></textarea>
 			</div>
@@ -215,7 +218,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Bringen Sie den Beginn Ihrer Schmerzen mit
+			<div class="frage">8. Bringen Sie den Beginn Ihrer Schmerzen mit
 				einem bestimmten Ereignis in Zusammenhang?</div>
 			<div class="antwort">
 				<input type="checkbox" id="nein" name="Antwort" value="nein">
@@ -254,7 +257,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Wie gestaltet sich der weitere Verlauf der
+			<div class="frage">9. Wie gestaltet sich der weitere Verlauf der
 				Hauptschmerzen?</div>
 			<div class="antwort">
 				<input type="radio" id="von Anfang an gleich bleibend"
@@ -276,7 +279,7 @@
 		</form>
 		<br>
 		<form>
-			<div class="frage">Wie häufig leiden Sie unter schmerzen?
+			<div class="frage">10. Wie häufig leiden Sie unter schmerzen?
 				Tragen Sie in das Feld eine entsprechende Zahl ein.</div>
 			<div class="antwort">
 				<input type="radio" id="dauerhaft" name="Antwort" value="dauerhaft">
@@ -303,7 +306,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Was verstärtk den Schmerz?</div>
+			<div class="frage">11. Was verstärtk den Schmerz?</div>
 			<div class="antwort">
 				<input type="checkbox" id="häufiges Überkopfarbeiten" name="Antwort"
 					value="häufiges Überkopfarbeiten"> <label class="antworten"
@@ -338,7 +341,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Zu welcher Tageszeit treten Ihre Schmerzen
+			<div class="frage">12. Zu welcher Tageszeit treten Ihre Schmerzen
 				im allgemeinen auf oder sind am schlimmsten?</div>
 			<div class="antwort">
 				<input type="checkbox" id="morgens vor dem Aufstehen" name="Antwort"
@@ -364,7 +367,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Wie weit können Sie schmerzfrei gehen?</div>
+			<div class="frage">13. Wie weit können Sie schmerzfrei gehen?</div>
 			<div class="antwort">
 				<input type="radio" id="weniger als 100 m" name="Antwort"
 					value="weniger als 100 m"> <label class="antworten"
@@ -383,7 +386,7 @@
 		</form>
 		<br>
 		<form>
-			<div class="frage">Von wem wurden Sie bisher wegen Ihrer
+			<div class="frage">14. Von wem wurden Sie bisher wegen Ihrer
 				Schmerzen untersucht oder behandelt?</div>
 			<div class="antwort">
 				<input type="radio" id="keine Behandlung" name="Antwort"
@@ -404,7 +407,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Wie wurden Ihre Schmerzen behandelt? Wie war
+			<div class="frage">15. Wie wurden Ihre Schmerzen behandelt? Wie war
 				der Behandlungserfolg</div>
 			<div class="antwort">
 				<input type="radio" id="bisher erfolgte keine Behandlung"
@@ -547,7 +550,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Welche Medikamente nehmen Sie zur Zeit ein?</div>
+			<div class="frage">16. Welche Medikamente nehmen Sie zur Zeit ein?</div>
 			<div class="antwort">
 
 				<table border="1">
@@ -594,7 +597,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Ist bei Ihnen eine Allergie oder
+			<div class="frage">17. Ist bei Ihnen eine Allergie oder
 				Medikamentenunverträglichkeit bekannt?</div>
 			<div class="antwort">
 				<input type="radio" id="nein" name="Antwort" value="nein"> <label
@@ -610,7 +613,7 @@
 		<br>
 
 		<form>
-			<div class="frage">Welche schmerzbezogene Untersuchung wurde
+			<div class="frage">18. Welche schmerzbezogene Untersuchung wurde
 				bei Ihnen durchgeführt?</div>
 			<div class="antwort">
 
@@ -670,7 +673,7 @@
 
 		<br>
 		<form>
-			<div class="frage">Wie schätzen Sie ihre beruflich bedingte
+			<div class="frage">19. Wie schätzen Sie ihre beruflich bedingte
 				körperliche/seelische Belastung ein?</div>
 			<div class="antwort">
 				<input type="checkbox" id="gering" name="Antwort" value="gering">
@@ -730,7 +733,7 @@
 		</form>
 		<br>
 		<form>
-			<div class="frage">Leiden Sie an einer der folgenden
+			<div class="frage">20. Leiden Sie an einer der folgenden
 				Erkrankungen?</div>
 			<div class="antwort">
 				<input type="checkbox" id="Schilddrüsenerkrankung" name="Antwort"
@@ -774,7 +777,7 @@
 		<br>
 		<form>
 
-			<div class="frage">Wie sind Sie auf diese Praxis aufmerksam
+			<div class="frage">21. Wie sind Sie auf diese Praxis aufmerksam
 				geworden?</div>
 			<div class="antwort">
 				<input type="radio" id="Telefonbuch" name="Antwort"
@@ -795,7 +798,7 @@
 		<br>
 		<form>
 			<div class="frage">
-				Um Sie individuell und optimal behandeln zu können, kommen oftmals
+				22. Um Sie individuell und optimal behandeln zu können, kommen oftmals
 				auch Behandlungsmöglichkeiten in Betracht, welche von den
 				gesetzlichen Krankenkassen nicht übernommen werden. <br>
 				Entscheiden Sie selbst, über welche Therapiemethoden Sie aufgeklärt
@@ -825,11 +828,22 @@ werden.">
 					Ich möchte über alle Gesundheitsleistungen, die in meinem Fall
 					geeignet und sinnvoll sind, aufgeklärt werden.</label>
 			</div>
-		</form>
-
-
+		</form> <br>
+		<form method="post" enctype="multipart/form-data">
+		<div class="frage">
+  <label>25. Hier können Sie Ihren Medikamentennplan, die Verpackung Ihrer Medikamente, Arztbriefe usw. hochladen.
+  Wählen Sie dazu eine Datei von Ihrem Rechner aus.<br><br>
+    <input name="datei" type="file" size="50" accept="text/*"> <br>
+    <input name="datei" type="file" size="50" accept="text/*"> <br>
+    <input name="datei" type="file" size="50" accept="text/*"> 
+  </label>  <br> <br>
+  <button id="hochladen">Hochladen</button>
+  
+</div>
+</form>
+<br> <br> <br>
 		<form>
-			<div class="frage">Haben Sie noch Fragen?</div>
+			<div class="frage">24. Haben Sie noch Fragen?</div>
 			<div class="antwort">
 				<textarea name="nachricht" rows="6" cols="37"></textarea>
 
@@ -851,6 +865,6 @@ werden.">
 
 		<button id="senden">senden</button>
 		<br> <br>
-	</div>
+	</div></div>
 </body>
 </html>
