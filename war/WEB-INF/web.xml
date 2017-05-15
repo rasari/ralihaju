@@ -11,6 +11,7 @@
 	<welcome-file-list>
 		<welcome-file>html/Anamnesebogen.html</welcome-file>
 	</welcome-file-list>
+	
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
 		<servlet-class>htwg.in.gib.anam.LoginServlet</servlet-class>
@@ -18,5 +19,23 @@
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>AnamnesebogenAServlet</servlet-name>
+		<servlet-class>htwg.in.gib.anam.AnamnesebogenAServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnamnesebogenAServlet</servlet-name>
+		<url-pattern>/anamnesebogenAnaesthesie</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>AnamnesebogenOServlet</servlet-name>
+		<servlet-class>htwg.in.gib.anam.AnamnesebogenOServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnamnesebogenOServlet</servlet-name>
+		<url-pattern>/anamnesebogenOrthopaedie</url-pattern>
 	</servlet-mapping>
 </web-app>
