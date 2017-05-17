@@ -3,16 +3,17 @@ package htwg.in.gib.anam;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-public class AnamnesebogenAServlet extends HttpServlet{
-	
-	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
-		
+public class AnamnesebogenAServlet extends HttpServlet {
+
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
 		String vorname = req.getParameter("Vorname");
 		String nachname = req.getParameter("Nachname");
 		String antwortGeschlecht = req.getParameter("Antwort");
@@ -70,14 +71,16 @@ public class AnamnesebogenAServlet extends HttpServlet{
 		String nachricht002 = req.getParameter("Nachricht02");
 		String nachricht003 = req.getParameter("Nachricht03");
 
-		
 		resp.setContentType("text/html");
 		String htmlResp = "<html>";
 		htmlResp += "<head>";
 		htmlResp += "<body>";
+		htmlResp += "<h2> Vorname des Patienten: " + vorname;
+		htmlResp += "</body>";
+		htmlResp += "</html>";
 		PrintWriter writer = resp.getWriter();
-		
-		writer.println();
+
+		writer.println(htmlResp);
 	}
 
 }
