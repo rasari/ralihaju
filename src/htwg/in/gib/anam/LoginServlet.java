@@ -25,8 +25,7 @@ public class LoginServlet extends HttpServlet {
 	    htmlResponse =  "<h2>Ihr Benutzername lautet: " + username + "</h2>";
 		htmlResponse += "<h2>Ihr Passwort lautet: " + passwort + "</h2>";
 		htmlResponse += "</body>";
-		htmlResponse += "</html>";
-		
+		htmlResponse += "</html>";		
 		writer.println(htmlResponse);
 	}
 }
