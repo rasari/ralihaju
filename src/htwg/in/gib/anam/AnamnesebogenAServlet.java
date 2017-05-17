@@ -73,9 +73,12 @@ public class AnamnesebogenAServlet extends HttpServlet {
 
 		resp.setContentType("text/html");
 		String htmlResp = "<html>";
-		htmlResp += "<head>";
+		htmlResp += "<head> </head>";
 		htmlResp += "<body>";
 		htmlResp += "<h2> Vorname des Patienten: " + vorname;
+		htmlResp += "<h2> Nachname des Patienten: " + nachname;
+		htmlResp += "<h2> Geschlecht des Patienten: " + antwortGeschlecht;
+		htmlResp += "<h2> Geburtsdatum des Patienten: " + gebDat;
 		htmlResp += "</body>";
 		htmlResp += "</html>";
 		PrintWriter writer = resp.getWriter();
