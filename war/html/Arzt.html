@@ -22,23 +22,23 @@
 			<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button></a>
 				
 	</div>
-	<div class="tabcontent">
+	
 
-	<div class=bogen>
-		
+	<div class="bogen">
+	<br>
+		<div id="anmeldenA">
 		<form name="login" method="get" action="/login">
-		<div id="login">
 			<label class="anmelden" for="Klinik">Klinikum: </label> 
-			<input type="text" id="Klinik" name="Klinik"> <br> 
+			<input type="text" id="AnmeldenA" name="Klinik"> <br> 
 			<label class="anmelden" for="Passwort">Passwort:</label>
-			<input type="password" id="Passwort" name="Passwort">
+			<input type="password" id="AnmeldenA" name="Passwort">
 			<br>
 			<a id="vergessen">Passwort vergessen? </a><a id="Regi">
 			Registrieren</a>
 			<input type="submit" value="Anmelden">
 			<br>
-				</div>
-				</form> <br> 
+				</form></div>
+				 <br> 
 				
 				
 		
@@ -49,12 +49,12 @@
 				
 				
 				/*platzhalter für Liste mit Anamnesebögen*/
-				
+				</div>
 		<div class="antwort">
 				<textarea name="nachricht003" rows="6" cols="37"></textarea>
-			</div>
-		</div>
-				</form> <br> 
+			
+
+				 <br> 
 		
 				<button id="herunterladen">Alle Herunterladen</button>
 				<button id="löschen">Alle löschen</button>
@@ -62,9 +62,12 @@
 				<button id="markierterunterladen">Markierte herunterladen</button>
 				<br><br>
 				<br><br>
+				</div>
 				
+			</form>
+			<br>
 	</div>
 	</div>
-	</div>
+	
 </body>
 </html>

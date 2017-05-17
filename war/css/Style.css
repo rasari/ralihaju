@@ -21,10 +21,14 @@ body{
 		
 }
 
-h1{
+/*Schriftfarbe und style*/
+p, td, h1, h2, label,a {
 	color:#424242;
 	font-family: sans-serif;
 }
+
+
+
 b{
 	font-size:40px;
 	font-style:normal;
@@ -61,9 +65,28 @@ li{
 	border-width: 2px;
 	border-color: #1990b7;
 	border-radius: 5px 5px;
-	margin-right:60px;
+	
 }
+/*Anmelden auf Arztsicht*/
+#anmeldenA{
 
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1990b7;
+	border-radius: 7px 7px;
+	margin-right:10px;
+	color: #424242;
+	font-size: 25px;
+	font-style: normal;
+	font-family: sans-serif;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+#AnmeldenA{
+	width: 200px;
+	height: 22px;
+	font-size: 18px;
+}
 button{
 	background-color: #1990b7;
 	color: white;
@@ -98,7 +121,7 @@ button{
 #senden{
 	float: right;
 	width: 100px;
-	height:30px;
+	height:50px;
 	font-family: sans-serif;
 	font-size:15px;
 }
@@ -109,7 +132,7 @@ button{
 	background-color: red;
 	border-color:red;
 }
-/*Registrieren und abmelden Style*/
+/*Registrieren und anmelden Style*/
 #Regi,#vergessen{
 	color:scrollbar;
 	font-size:12px;
@@ -150,7 +173,8 @@ button{
     font-size:22px;
     float: left;
   	border:none;
-    padding: 8px 70px;
+  	
+    padding: 10px 97px;
     transition: 0.3s;
     border-radius:3px;
    	
@@ -280,21 +304,7 @@ textarea{
 	width: 260px;
 }
 
-#login{
-	font-size: 22px;
-	font-style: normal;
-	font-family: sans-serif;
-	color: #424242;
-	border-width:1.5px;
-	border-color:#1990b7;
-	border-style: solid;
-	border-bottom-style:none;
-	margin-right:10px;
-	border-top-left-radius:7px;
-	border-top-right-radius:7px;
-	padding-left: 10px;
-	padding-top: 5px;	
-}
+
 
 #anamneseliste{
 	font-size: 22px;
