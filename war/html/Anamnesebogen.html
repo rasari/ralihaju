@@ -7,66 +7,67 @@
 <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-	<div class="container">
-		<img src="../img/GALOGO.png" alt=Logo id="Logo">
-		<div id=anmelden>
+<div class="container">
+	<img src="../img/GALOGO.png" alt=Logo id="Logo">
+	<div id=anmelden>
 
-			<form name="login" method="post" action="/login">
+			<form>
 				<label class="anmelden" for="Klinik">Klinikum: </label> <input
 					type="text" id="Klinik" name="Klinik"> <br> <label
 					class="anmelden" for="Passwort">Passwort:</label><input type="text"
-					id="Passwort" name="Passwort"> <input id="login"
-					type="submit" value="Log In">
+					id="Passwort" name="Passwort">
+
+
 			</form>
 			<a id="vergessen">Passwort vergessen? </a><a id="Regi">
 				Registrieren</a>
+			<button>anmelden</button>
 		</div>
-		<br>
-		<div class="tab">
+	<br>
+	<div class="tab">
 
-			<a href=../html/Anamnesebogen.html>
-				<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
-			</a> <a href=../html/Kontakt.html>
-				<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
-			</a> <a href=../html/Impressum.html><button class="tablinks"
-					onclick="openTab(event, 'Impressum')">Impressum</button></a> <a
-				href=../html/Arzt.html>
-				<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button>
-			</a>
-		</div>
-
-		<div class="tabcontent">
-			<br>
-			<h1>Willkommen auf gib-Anamnese</h1>
-			<br>
-			<p>Auf unsere Website haben Sie die Möglichkeit, Ihre Anamnese
-				für eine bestimmte Fachrichtung zu erfassen und diese anschließen
-				dem entsprechenden Arzt zukommen zu lassen</p>
-			<br>
-			<p>Dazu wählen Sie bitte eine der folgenden Fachrichtungen aus
-				und füllen den Bogen vollständig aus.</p>
-
-
-			<p>Psychiatrie</p>
-
-
-			<div class=Anästhesie>
-				<a href="../html/AnamnesebogenA.html"><img id="Logo2"
-					src="../img/KNKlinikum.jpg" /></a>
-
-			</div>
-
-			<div class=Orthopädie>
-
-				<a href="../html/AnamnesebogenO.html"><img id="Logo2"
-					src="../img/orthopaedie.png" /></a> <br>
-			</div>
-
-			<p>
-				<a href="/gib_anamnese">GIB_Anamnese</a>
-		</div>
+		<a href=../html/Anamnesebogen.html>
+			<button class="tablinks" onclick="openTab(event, 'Anamnesebogen')">Anamnesebogen</button>
+		</a> <a href=../html/Kontakt.html>
+			<button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
+		</a> <a href=../html/Impressum.html><button class="tablinks"
+				onclick="openTab(event, 'Impressum')">Impressum</button></a>
+				<a href=../html/Arzt.html>
+			<button class="tablinks" onclick="openTab(event, 'Arzt')">Arzt</button></a>
 	</div>
 
+	<div class="tabcontent">
+		<br>
+		<h1>Willkommen auf gib-Anamnese</h1>
+		<br>
+		<p>Auf unsere Website haben Sie die Möglichkeit, Ihre Anamnese für
+			eine bestimmte Fachrichtung zu erfassen und diese anschließen dem
+			entsprechenden Arzt zukommen zu lassen</p>
+		<br>
+		<p>Dazu wählen Sie bitte eine der folgenden Fachrichtungen aus und
+			füllen den Bogen vollständig aus.</p>
+
+
+		<p>Psychiatrie</p>
+
+
+		<div class=Anästhesie>
+			<a href="../html/AnamnesebogenA.html"><img id="Logo2"
+				src="../img/KNKlinikum.jpg" /></a>
+
+		</div>
+
+		<div class=Orthopädie>
+
+			<a href="../html/AnamnesebogenO.html"><img id="Logo2"
+				src="../img/orthopaedie.png" /></a> <br>
+		</div>
+		
+		<p>
+		<a href="/gib_anamnese">GIB_Anamnese</a>
+	</div>
+	</div>
+	
 </body>
 </html>
 
