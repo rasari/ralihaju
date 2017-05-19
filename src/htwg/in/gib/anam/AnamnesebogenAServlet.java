@@ -3,7 +3,6 @@ package htwg.in.gib.anam;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class AnamnesebogenAServlet extends HttpServlet {
 
+	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
 		String vorname = req.getParameter("Vorname");
@@ -83,7 +83,8 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		htmlResp += "</html>";
 		PrintWriter writer = resp.getWriter();
 
-		writer.println(htmlResp);
+//		writer.println(htmlResp);
+		PDF_Generierung pdf =  new PDF_Generierung(htmlResp);
 	}
 
 }

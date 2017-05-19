@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class AnamnesebogenOServlet extends HttpServlet{
 	
+	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp){
 	String vorname = req.getParameter("Vorname");
 	String nachname = req.getParameter("Nachname");
