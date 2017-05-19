@@ -1,7 +1,10 @@
 package htwg.in.gib.anam;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
@@ -12,28 +15,6 @@ public class PDF_Generierung {
 
 	String inhaltText = "";
 
-	// @SuppressWarnings({ "resource" })
-	// // static nicht möglich, da sonst getServletContext nicht geht
-	// public PDF_Generierung(HttpServletRequest req, HttpServletResponse resp)
-	// throws ServletException, IOException {
-	//
-	// String pdfFilename = "Anamnesebogen.pdf";
-	// String contextPath = getServletContext().getRealPath(File.separator);
-	// File pdfFile = new File(contextPath + pdfFilename);
-	//
-	// resp.setContentType("application/pdf");
-	// resp.addHeader("Content-Disposition", "attachment; filename: " +
-	// pdfFilename);
-	// resp.setContentLength((int) pdfFile.length());
-	//
-	// FileInputStream fileInputStream = new FileInputStream(pdfFile);
-	// OutputStream respOutputStream = resp.getOutputStream();
-	// int bytes;
-	// while ((bytes = fileInputStream.read()) != -1) {
-	// respOutputStream.write(bytes);
-	// }
-	// }
-
 	public PDF_Generierung(String inhaltText) {
 		this.inhaltText = inhaltText;
 		pdfGenerieren();
@@ -43,11 +24,26 @@ public class PDF_Generierung {
 	public void pdfGenerieren() {
 		Document document = new Document();
 		try {
-			PdfWriter.getInstance(document, new FileOutputStream("Anamnesebogen_Anaesthesie.pdf"));
-		
-		document.open();
-		document.add(new Paragraph(inhaltText));
-		document.close();
+			//
+			File file = new File(inhaltText);
+			// So heißt die File
+			FileOutputStream out = new FileOutputStream("C:/Users/Jülide/Desktop/" + file + ".pdf");
+			PdfWriter.getInstance(document, out);
+
+			document.open();
+			document.add(new Paragraph(inhaltText));
+			document.close();
+			try {
+//				
+				// hier gibt man den Pfad ein, in dem sich eine PDF befindet,
+				// genau die wird dann geöffnet -> Pfad bis .pdf
+				Desktop.getDesktop().open(new File("C:/Users/Jülide/Desktop/" + file + ".pdf"));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (DocumentException e) {
@@ -55,6 +51,14 @@ public class PDF_Generierung {
 		}
 
 		// Meldung : Wollen Sie es ansehen ?
+	}
+	
+	public static void main(String[] args) {
+		
+		PDF_Generierung pdf = new PDF_Generierung("vorname nachname");
+		pdf.
+		System.out.println(pdf);
+		
 	}
 
 }

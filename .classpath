@@ -7,6 +7,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Jülide/Downloads/com.lowagie.text-2.1.7.jar/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Jülide/Downloads/com.lowagie.text-2.1.7.jar/com.lowagie.text-2.1.7.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
