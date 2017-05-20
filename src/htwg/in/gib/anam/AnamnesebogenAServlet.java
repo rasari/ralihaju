@@ -16,7 +16,7 @@ public class AnamnesebogenAServlet extends HttpServlet {
 
 		String vorname = req.getParameter("Vorname");
 		String nachname = req.getParameter("Nachname");
-		String antwortGeschlecht = req.getParameter("Antwort");
+		String antwortGeschlecht = req.getParameter("Geschlecht");
 		String gebDat = req.getParameter("gebDat");
 		String strasse = req.getParameter("Str");
 		String plz = req.getParameter("PLZ");
@@ -72,13 +72,13 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		String nachricht003 = req.getParameter("Nachricht03");
 		
 		
-		HelloWorld hw = new HelloWorld();
+		
 		
 		resp.setContentType("text/html");
 		String htmlResp = "<html>";
 		htmlResp += "<head> </head>";
 		htmlResp += "<body>";
-		htmlResp += "<h2> Vorname des Patienten: " + hw.hallo();
+		htmlResp += "<h2> Vorname des Patienten: " + vorname;
 		htmlResp += "<h2> Nachname des Patienten: " + nachname;
 		htmlResp += "<h2> Geschlecht des Patienten: " + antwortGeschlecht;
 		htmlResp += "<h2> Geburtsdatum des Patienten: " + gebDat;
