@@ -16,7 +16,7 @@ public class AnamnesebogenAServlet extends HttpServlet {
 
 		String vorname = req.getParameter("Vorname");
 		String nachname = req.getParameter("Nachname");
-		String antwortGeschlecht = req.getParameter("Antwort");
+		String antwortGeschlecht = req.getParameter("Geschlecht");
 		String gebDat = req.getParameter("gebDat");
 		String strasse = req.getParameter("Str");
 		String plz = req.getParameter("PLZ");
