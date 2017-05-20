@@ -70,7 +70,8 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		String nachricht001 = req.getParameter("Nachricht01");
 		String nachricht002 = req.getParameter("Nachricht02");
 		String nachricht003 = req.getParameter("Nachricht03");
-		
+		PDF_Generierung pdf = new PDF_Generierung();
+//		pdf.getFile();
 		resp.setContentType("text/html");
 		String htmlResp = "<html>";
 		htmlResp += "<head> </head>";
@@ -79,13 +80,14 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		htmlResp += "<h2> Nachname des Patienten: " + nachname;
 		htmlResp += "<h2> Geschlecht des Patienten: " + antwortGeschlecht;
 		htmlResp += "<h2> Geburtsdatum des Patienten: " + gebDat;
+		htmlResp += pdf.getFile().getName();
 		htmlResp += "</body>";
 		htmlResp += "</html>";
 		
 		PrintWriter writer = resp.getWriter();	
 		writer.println(htmlResp);
 		
-		PDF_Generierung pdf = new PDF_Generierung(htmlResp);
+		
 		pdf.pdfGenerieren(htmlResp);
 		
 		

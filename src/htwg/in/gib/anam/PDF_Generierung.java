@@ -12,29 +12,40 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
 
 public class PDF_Generierung {
+	File file;
+	
+	public File getFile() {
+		return file;
+	}
+
+	public void setFile(File file) {
+		file = new File("Bogen.pdf");
+		this.file = file;
+	}
 
 	// private static final String System = null;
 	String inhaltText = "";
 
-	public PDF_Generierung(String inhaltText) {
-		this.inhaltText = inhaltText;
+	public PDF_Generierung() {
+//		this.inhaltText = inhaltText;
 		// pdfGenerieren();
 
 	}
+
 
 	public void pdfGenerieren(String inhaltText) {
 		Document document = new Document();
 		try {
 			//
 
-			File file = new File("http://1-dot-gib-anamnese.appspot.com/anamnesebogenAnaesthesie.pdf");
+			file = new File("Bogen.pdf");
 			// FileOutputStream: "AnamneseBogen.pdf"
 			FileOutputStream out = new FileOutputStream(file);
 
 			PdfWriter.getInstance(document, out);
 
 			document.open();
-			System.out.println(document);
+//			System.out.println(document);
 			document.add(new Paragraph(this.inhaltText));
 
 			document.close();
