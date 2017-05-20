@@ -1,6 +1,7 @@
 package htwg.in.gib.anam;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -70,9 +71,9 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		String nachricht001 = req.getParameter("Nachricht01");
 		String nachricht002 = req.getParameter("Nachricht02");
 		String nachricht003 = req.getParameter("Nachricht03");
-		PDF_Generierung pdf = new PDF_Generierung();
-//		pdf.getFile();
-		resp.setContentType("text/html");
+		
+
+		resp.setContentType("application/pdf");
 		String htmlResp = "<html>";
 		htmlResp += "<head> </head>";
 		htmlResp += "<body>";
@@ -80,15 +81,15 @@ public class AnamnesebogenAServlet extends HttpServlet {
 		htmlResp += "<h2> Nachname des Patienten: " + nachname;
 		htmlResp += "<h2> Geschlecht des Patienten: " + antwortGeschlecht;
 		htmlResp += "<h2> Geburtsdatum des Patienten: " + gebDat;
-		htmlResp += pdf.getFile().getName();
 		htmlResp += "</body>";
 		htmlResp += "</html>";
 		
-		PrintWriter writer = resp.getWriter();	
-		writer.println(htmlResp);
 		
 		
-		pdf.pdfGenerieren(htmlResp);
+		
+		OutputStream os = resp.getOutputStream();
+		PDF_Generierung pdf = new PDF_Generierung(htmlResp, os);
+		pdf.pdfGenerieren(htmlResp, os);
 		
 		
 	}

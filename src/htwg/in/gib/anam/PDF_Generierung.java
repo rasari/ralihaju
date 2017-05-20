@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
+
+import javax.servlet.http.HttpServletResponse;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
@@ -12,67 +15,47 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
 
 public class PDF_Generierung {
-	File file;
-	
-	public File getFile() {
-		return file;
-	}
 
-	public void setFile(File file) {
-		file = new File("Bogen.pdf");
-		this.file = file;
-	}
-
-	// private static final String System = null;
 	String inhaltText = "";
+	OutputStream resp;
 
-	public PDF_Generierung() {
-//		this.inhaltText = inhaltText;
+	public PDF_Generierung(String inhaltText, OutputStream resp) {
+		this.inhaltText = inhaltText;
+		this.resp = resp;
 		// pdfGenerieren();
 
 	}
 
-
-	public void pdfGenerieren(String inhaltText) {
+	public void pdfGenerieren(String inhaltText, OutputStream resp) {
+		this.resp = resp;
 		Document document = new Document();
+
 		try {
-			//
-
-			file = new File("Bogen.pdf");
-			// FileOutputStream: "AnamneseBogen.pdf"
-			FileOutputStream out = new FileOutputStream(file);
-
-			PdfWriter.getInstance(document, out);
-
-			document.open();
-//			System.out.println(document);
-			document.add(new Paragraph(this.inhaltText));
-
-			document.close();
-			try {
-				//
-				// hier gibt man den Pfad ein, in dem sich eine PDF befindet,
-				// genau die wird dann auf dem Desktop geöffnet -> Pfad bis .pdf
-				Desktop.getDesktop().open(file);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			PdfWriter.getInstance(document, resp);
 		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
-		// Meldung : Wollen Sie es ansehen ?
-	}
+		document.open();
+		// System.out.println(document);
+		try {
+			document.add(new Paragraph(this.inhaltText));
+		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
-	// public static void main(String[] args) {
-	//
-	// PDF_Generierung pdf = new PDF_Generierung("vorname nachname");
-	// pdf.pdfGenerieren("vorname nachname");
-	//
-	// }
+		document.close();
+
+		// Meldung : Wollen Sie es ansehen ?
+
+		// public static void main(String[] args) {
+		//
+		// PDF_Generierung pdf = new PDF_Generierung("Hallo Aybars, was geht
+		// broo");
+		// pdf.pdfGenerieren("Hallo Aybars, was geht broo");
+		//
+	}
 
 }
