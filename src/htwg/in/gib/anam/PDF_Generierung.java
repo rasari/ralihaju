@@ -9,18 +9,8 @@ import com.lowagie.text.pdf.PdfWriter;
 
 public class PDF_Generierung {
 
-	String inhaltText = "";
-	OutputStream resp;
+	public static void pdfGenerieren(String inhaltText, OutputStream resp) {
 
-	public PDF_Generierung(String inhaltText, OutputStream resp) {
-		this.inhaltText = inhaltText;
-		this.resp = resp;
-		// pdfGenerieren();
-
-	}
-
-	public void pdfGenerieren(String inhaltText, OutputStream resp) {
-		this.resp = resp;
 		Document document = new Document();
 
 		try {
@@ -33,7 +23,7 @@ public class PDF_Generierung {
 		document.open();
 		// System.out.println(document);
 		try {
-			document.add(new Paragraph(this.inhaltText));
+			document.add(new Paragraph(inhaltText));
 		} catch (DocumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
